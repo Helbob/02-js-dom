@@ -21,16 +21,13 @@
       img {
         width: 100%;
       }
+      header,
       article,
       footer {
         border: 1px solid black;
       }
 
-      h1 {
-        text-align: center;
-        border: 1px solid black;
-      }
-
+      header,
       footer {
         text-align: center;
       }
@@ -42,7 +39,7 @@
       <h2>Undertitel</h2>
       <section>
         <article>
-          <img src="placeimg.jpg" alt="" />
+          <img src="placeimg.jpg" alt="cat" />
           <h3>Article 1</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis,
@@ -53,7 +50,7 @@
           </p>
         </article>
         <article>
-          <img src="placeimg2.jpg" alt="" />
+          <img src="placeimg2.jpg" alt="dog" />
           <h3>Article 2</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
@@ -67,4 +64,37 @@
     </main>
     <footer><p>This is a footer</p></footer>
   </body>
+  <script>
+    const header = document.querySelector("header");
+    const h1 = document.querySelector("h1");
+    const main = document.querySelector("main");
+    const h2 = document.querySelector("h2");
+    const section = document.querySelector("section");
+    const firstArticle = document.querySelector("article:first-child");
+    const secondArticle = document.querySelector("article:nth-child(2)");
+    const catImg = document.querySelector("article:first-child img");
+    const dogImg = document.querySelector("article:nth-child(2) img");
+    const catH3 = document.querySelector("article:first-child h3");
+    const dogH3 = document.querySelector("article:nth-child(2) h3");
+    const catP = document.querySelector("article:first-child p");
+    const dogP = document.querySelector("article:nth-child(2) p");
+    const footer = document.querySelector("footer");
+    const footerP = document.querySelector("footer p");
+
+    console.log(header);
+    console.log(h1);
+    console.log(main);
+    console.log(h2);
+    console.log(section);
+    console.log(firstArticle);
+    console.log(secondArticle);
+    console.log(catImg);
+    console.log(dogImg);
+    console.log(catH3);
+    console.log(dogH3);
+    console.log(catP);
+    console.log(dogP);
+    console.log(footer);
+    console.log(footerP);
+  </script>
 </html>
