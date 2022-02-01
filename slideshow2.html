@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tro på det...</h1>
+    <img src="img1.png" alt="billede 1" />
+    <p>Billeder brugt med tilladse af Rasmus Bregnhøj</p>
+    <button>Videre</button>
+
+    <script>
+      let tal = 0;
+      const img = document.querySelector("img");
+
+      let imgs = [
+        "img1.png",
+        "img2.png",
+        "img3.png",
+        "img4.png",
+        "img5.png",
+        "img6.png",
+        "img7.png",
+        "img8.png",
+      ];
+
+      const knap = document.querySelector("button");
+      knap.addEventListener("click", klikket);
+
+      function klikket() {
+        console.log(klikket);
+        if (tal < 7) {
+          console.log(imgs[tal]);
+          tal++;
+          img.src = imgs[tal];
+          knap.textContent = "Videre";
+        } else {
+          knap.textContent = "Forfra";
+          tal = 0;
+          img.src = imgs[tal];
+        }
+      }
+    </script>
+  </body>
+</html>
