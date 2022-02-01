@@ -72,6 +72,8 @@
     const section = document.querySelector("section");
     const firstArticle = document.querySelector("article:first-child");
     const secondArticle = document.querySelector("article:nth-child(2)");
+    const firstArticleH3 = document.querySelector("article:first-child h3");
+    const secondArticleH3 = document.querySelector("article:nth-child(2) h3");
     const catImg = document.querySelector("article:first-child img");
     const dogImg = document.querySelector("article:nth-child(2) img");
     const catH3 = document.querySelector("article:first-child h3");
@@ -88,6 +90,8 @@
     console.log(section);
     console.log(firstArticle);
     console.log(secondArticle);
+    console.log(firstArticleH3);
+    console.log(secondArticleH3);
     console.log(catImg);
     console.log(dogImg);
     console.log(catH3);
@@ -96,5 +100,11 @@
     console.log(dogP);
     console.log(footer);
     console.log(footerP);
+
+    header.innerHTML = "<h1>En ny titel</h1>";
+    firstArticleH3.textContent = "Article 1, ny";
+    secondArticleH3.textContent = "Article 2, ny";
+    catP.textContent = "Nu er der en ny tekst her, yeehaw";
+    dogP.textContent = "Nu er der en ny tekst her, yeehaw 2";
   </script>
 </html>
